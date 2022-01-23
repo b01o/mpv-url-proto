@@ -13,7 +13,7 @@ IF NOT %errorLevel% == 0 (
 )
 
 ECHO Cleanup regedit...
-REM DELETE PROTOCOL INTO REGEDIT
+REM DELETE PROTOCOL FROM REGEDIT
 REG DELETE HKEY_CLASSES_ROOT\mpv /f
 ECHO Removing the helper...
 IF EXIST "%HOMEPATH%\.scripts\open_in_mpv.bat" (
